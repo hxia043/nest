@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/hxia043/nest/internal/swicctl/cmd"
+	"github.com/hxia043/nest/internal/nestctl/cmd"
 )
 
 func main() {

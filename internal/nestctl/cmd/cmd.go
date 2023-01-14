@@ -4,9 +4,9 @@ import "github.com/spf13/cobra"
 
 func NewSWICCtlExecute() *cobra.Command {
 	cmds := &cobra.Command{
-		Use:   "swicctl",
-		Short: "swic is a software image controller",
-		Long:  "swic is a software image controller",
+		Use:   "nestctl",
+		Short: "nest is a software image controller",
+		Long:  "nest is a software image controller",
 		Run: func(cmd *cobra.Command, args []string) {
 			_ = cmd.Help()
 		},

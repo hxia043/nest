@@ -4,14 +4,14 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"strconv"
 	"strings"
 	"sync"
 
 	"github.com/hxia043/nest/internal/engine"
-	"github.com/hxia043/nest/internal/swicctl/db"
+	"github.com/hxia043/nest/internal/nestctl/db"
 	"github.com/hxia043/nest/pkg/util/filesys"
 	"github.com/hxia043/nest/types/exception"
-	"github.com/hxia043/nest/util/number"
 )
 
 type ImageOnboardOption struct {
@@ -26,6 +26,11 @@ type imagesOption struct {
 	lock             sync.Mutex
 	imagesMap        sync.Map
 	invalidImageName []string
+}
+
+func isNumber(s string) bool {
+	_, err := strconv.ParseFloat(s, 64)
+	return err == nil
 }
 
 func (o *ImageOnboardOption) validateOnboardOption() error {
@@ -89,7 +94,7 @@ func (o *ImageOnboardOption) parseImagesMapFrom(images []string) (sync.Map, erro
 					continue
 				}
 
-				if number.IsNumber(string(imageFileNameList[j][0])) {
+				if isNumber(string(imageFileNameList[j][0])) {
 					tagBegin = true
 					tagPool = append(tagPool, imageFileNameList[j])
 					continue

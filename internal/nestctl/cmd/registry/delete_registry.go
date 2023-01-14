@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/hxia043/nest/internal/swicctl/db"
+	"github.com/hxia043/nest/internal/nestctl/db"
 	"github.com/spf13/cobra"
 )
 
@@ -35,7 +35,7 @@ func NewDeleteRegistryCmd() *cobra.Command {
 		Use:     "registry [name]",
 		Short:   "Delete registry",
 		Long:    "Delete registry",
-		Example: "swic delete registry test",
+		Example: "nest delete registry test",
 		Run: func(cmd *cobra.Command, args []string) {
 			if len(args) == 0 {
 				_ = cmd.Help()

@@ -6,8 +6,8 @@ import (
 )
 
 const (
-	dbworkspace = "/var/lib/swic"
-	dbname      = "swic.db"
+	dbworkspace = "/var/lib/nest"
+	dbname      = "nest.db"
 )
 
 var dbtype = "sqlite"

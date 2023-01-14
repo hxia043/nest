@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/hxia043/nest/internal/swicctl/db"
+	"github.com/hxia043/nest/internal/nestctl/db"
 	"github.com/spf13/cobra"
 )
 

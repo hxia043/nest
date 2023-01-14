@@ -2,7 +2,7 @@ package image
 
 import (
 	"github.com/hxia043/nest/internal/engine"
-	"github.com/hxia043/nest/internal/swicctl/db"
+	"github.com/hxia043/nest/internal/nestctl/db"
 )
 
 func NewEngineOption(namespace string, registry *db.Registry) engine.Options {

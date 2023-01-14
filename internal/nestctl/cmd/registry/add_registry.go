@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/hxia043/nest/internal/swicctl/db"
+	"github.com/hxia043/nest/internal/nestctl/db"
 	"github.com/spf13/cobra"
 )
 
@@ -65,7 +65,7 @@ func NewAddRegistryCmd() *cobra.Command {
 		Use:     "registry [name]",
 		Short:   "Add registry",
 		Long:    "Add registry",
-		Example: "swicctl add registry test -u nokiaadmin -p Nokia@1865 -r image-registry.openshift-image-registry.svc:5000 -c /var/home/core/cert/ca.crt",
+		Example: "nestctl add registry test -u nokiaadmin -p Nokia@1865 -r image-registry.openshift-image-registry.svc:5000 -c /var/home/core/cert/ca.crt",
 		Run: func(cmd *cobra.Command, args []string) {
 			if len(args) == 0 {
 				_ = cmd.Help()

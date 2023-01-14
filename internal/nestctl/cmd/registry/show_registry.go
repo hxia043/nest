@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/gosuri/uitable"
-	"github.com/hxia043/nest/internal/swicctl/db"
+	"github.com/hxia043/nest/internal/nestctl/db"
 	"github.com/hxia043/nest/pkg/util/cmdtable"
 	"github.com/spf13/cobra"
 )

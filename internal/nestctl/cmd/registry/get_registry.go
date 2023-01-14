@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/gosuri/uitable"
-	"github.com/hxia043/nest/internal/swicctl/db"
+	"github.com/hxia043/nest/internal/nestctl/db"
 	"github.com/hxia043/nest/pkg/util/cmdtable"
 	"github.com/spf13/cobra"
 )
@@ -49,7 +49,7 @@ func NewGetRegistryCmd() *cobra.Command {
 		Use:     "registry [name]",
 		Short:   "Get registry",
 		Long:    "Get registry",
-		Example: "swicctl get registry test",
+		Example: "nestctl get registry test",
 		Run: func(cmd *cobra.Command, args []string) {
 			if len(args) == 0 {
 				_ = cmd.Help()

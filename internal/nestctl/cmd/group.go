@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/hxia043/nest/internal/swicctl/cmd/image"
-	"github.com/hxia043/nest/internal/swicctl/cmd/registry"
+	"github.com/hxia043/nest/internal/nestctl/cmd/image"
+	"github.com/hxia043/nest/internal/nestctl/cmd/registry"
 	"github.com/spf13/cobra"
 )
 
@@ -102,7 +102,7 @@ func NewOnboardCmd() *cobra.Command {
 		Use:     "onboard [name]",
 		Short:   "Onboard images",
 		Long:    "Onboard images",
-		Example: "swicctl onboard test -i /var/home/core/images/ -n cran1",
+		Example: "nestctl onboard test -i /var/home/core/images/ -n cran1",
 		Run: func(cmd *cobra.Command, args []string) {
 			if len(args) == 0 {
 				_ = cmd.Help()

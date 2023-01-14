@@ -13,9 +13,9 @@ func initVersionCommand() {
 	/*
 		version = &cobra.Command{
 			Use:     "version",
-			Short:   "Show the swic version information",
-			Long:    "Show the swic version information. The version information is expected to follow semantic versionsing (https://semver.org/)",
-			Example: "swic version",
+			Short:   "Show the nest version information",
+			Long:    "Show the nest version information. The version information is expected to follow semantic versionsing (https://semver.org/)",
+			Example: "nest version",
 			Run:     versionExecute,
 		}
 	*/
